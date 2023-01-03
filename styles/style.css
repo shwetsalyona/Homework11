@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    display: block;
+}
+
+h2 {
+    font-family: 'Delius Unicase', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.grid-container {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.architecture {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 370px;
+    border-radius: 20px;
+    padding: 20px;
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.grid-item:hover .icon {
+    display: block;
+}
+
+.grid-item-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    text-align: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(224, 224, 224, 0.5);
+    border-radius: 8px;
+    display: none;
+}
+
+.icon:hover {
+    background: rgb(224, 224, 224);
+}
+
+.item-1 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-1.png");
+    grid-area: 1/1/2/2;
+}
+
+.item-1:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-1.png");
+}
+
+.item-2 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-2.png");
+    grid-area: 1/2/2/4;
+}
+
+.item-2:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-2.png");
+}
+
+.item-3 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-3.png");
+    grid-column: 1/3;
+}
+
+.item-3:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-3.png");
+}
+
+.item-4 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-4.png");
+}
+
+.item-4:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-4.png");
+}
+
+.item-5 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-5.png");
+}
+
+.item-5:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-5.png");
+}
+
+.item-6 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-6.png");
+    grid-area: 3/2/4/4;
+}
+
+.item-6:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-6.png");
+}
+
+.landscape {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.item-7 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-7.png");
+    grid-area: 1/1/2/2;
+}
+
+.item-7:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-7.png");
+}
+
+.item-8 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-8.png");
+    grid-area: 1/2/2/4;
+}
+
+.item-8:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-8.png");
+}
+
+.item-9 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-9.png");
+    grid-area: 2/1/4/3;
+}
+
+.item-9:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-9.png");
+}
+
+.item-10 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-10.png");
+    grid-area: 2/3/4/4;
+}
+
+.item-10 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-10.png");
+}
+
+.item-11 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-11.png");
+    grid-area: 4/1/5/3;
+}
+
+.item-11:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-11.png");
+}
+
+.item-12 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-12.png");
+    grid-area: 4/3/5/4;
+}
+
+.item-12:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-12.png");
+}
+
+.portrait {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.item-13 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-13.png");
+    grid-area: 1/1/2/2;
+}
+
+.item-13:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-13.png");
+}
+
+.item-14 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-14.png");
+    grid-area: 1/2/3/3;
+}
+
+.item-14:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-14.png");
+}
+
+.item-15 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-15.png");
+    grid-area: 1/3/2/4;
+}
+
+.item-15:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-15.png");
+}
+
+.item-16 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-16.png");
+    grid-area: 2/1/3/2;
+}
+
+.item-16:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-16.png");
+}
+
+.item-17 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-17.png");
+    grid-area: 2/3/4/4;
+}
+
+.item-17:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-17.png");
+}
+
+.item-18 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-18.png");
+    grid-area: 3/1/5/2;
+}
+
+.item-18:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-18.png");
+}
+
+.item-19 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-19.png");
+    grid-area: 3/2/4/3;
+}
+
+.item-19:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-19.png");
+}
+
+.item-20 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-20.png");
+    grid-area: 4/2/5/4;
+}
+
+.item-20:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-20.png");
+}
+
+.item-21 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)), url("../images/image-21.png");
+    grid-area: 5/1/6/3;
+}
+
+.item-21:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)), url("../images/image-21.png");
+}
+
+.item-22 {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 40%), rgb(37, 37, 37)),
+    url("../images/image-22.png");
+    grid-area: 5/3/6/4;
+    position: relative;
+}
+
+.item-22:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0%), rgb(37, 37, 37)),
+    url("../images/image-22.png");
+}
+
+
+
